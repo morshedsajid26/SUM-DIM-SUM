@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono,Cinzel_Decorative, Raleway,Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./component/Navbar";
+
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
@@ -48,6 +48,8 @@ export default function RootLayout({ children }) {
         <Header/>
         
         {children}
+
+        
 
         <Footer/>
       </body>
