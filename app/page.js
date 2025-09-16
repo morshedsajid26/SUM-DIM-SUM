@@ -9,7 +9,7 @@ import DivePart from './component/DivePart';
 const page = () => {
   return (
     <div>
-      <div className='bg-[url(/Banner.png)]  bg-cover bg-center bg-no-repeat '>
+      <div className='bg-[url(/Banner.png)]  bg-cover bg-center bg-no-repeat ' id=''>
      <Navbar/>
 
 

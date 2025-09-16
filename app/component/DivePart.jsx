@@ -4,7 +4,7 @@ import Container from './Container'
 
 const DivePart = () => {
   return (
-    <div className='bg-[url(/Divepart.png)] py-[60px] bg-cover bg-center bg-no-repeat '>
+    <div className='bg-[url(/Divepart.png)] py-[60px] bg-cover bg-center bg-no-repeat ' id='merchandise'>
         <Container>
           <div className='flex flex-col items-center justify-center text-center '>
                     <h1 className='text-white text-[64px] font-bold text-center font-cinzel'>Dive Into the World of Sumptuous
