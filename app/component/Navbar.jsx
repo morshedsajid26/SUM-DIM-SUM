@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Li liText='Contact'/>
             </div>
             <div className="button">
-              <button className='text-white text-[16px] font-semibold py-2.5 px-5 bg-white/12 rounded-[10px]'>Book a Table</button>
+              <button className='text-white text-[16px] font-semibold py-2.5 px-5 bg-white/12 rounded-[10px] font-raleway'>Book a Table</button>
             </div>
         </Container>
     </nav>

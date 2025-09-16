@@ -9,20 +9,20 @@ const Header = () => {
         <Container className={'flex items-center justify-between py-2.5'}>
             <div className="left flex items-center gap-10">
                
-                    <p className='text-white text-[12px] flex items-center gap-2'>
+                    <p className='text-white text-[12px] flex items-center gap-2 font-raleway'>
                     <FaLocationDot className='w-5 h-5 text-white' />
 
                     Your Address Here
                     </p>
                     
                 
-                    <p className='text-white text-[12px] flex items-center gap-2'>
+                    <p className='text-white text-[12px] flex items-center gap-2 font-poppins'>
                     <MdCall className='w-5 h-5 text-white' />
                         +1234567890
                     </p>
                     
                 
-                    <p className='text-white text-[12px] flex items-center gap-2'>
+                    <p className='text-white text-[12px] flex items-center gap-2 font-raleway'>
                     <MdEmail className='w-5 h-5 text-white'/>
                         example@example.com
                     </p>

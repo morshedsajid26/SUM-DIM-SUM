@@ -12,21 +12,21 @@ const Footer = () => {
         <Container className='border-y border-[#B31217] grid grid-cols-3 justify-between py-[60px]'>
             <div className="left gap-5 flex flex-col">
               
-                    <h3 className=' uppercase text-[24px] font-bold '>Contact</h3>
-                    <p className=' text-[16px] flex items-center gap-1'>
+                    <h3 className=' uppercase text-[24px] font-bold font-cinzel '>Contact</h3>
+                    <p className=' text-[16px] flex items-center gap-1 font-raleway'>
                     <IoLocationOutline className='w-6 h-6 text-black' />
                     
                        Your Address Here
                     </p>
                                         
                                     
-                    <p className=' text-[16px] flex items-center gap-1'>
+                    <p className=' text-[16px] flex items-center gap-1 font-poppins'>
                     <IoCallOutline className='w-6 h-6 text-black' />
                     +1234567890
                      </p>
                                         
                                     
-                    <p className=' text-[16px] flex items-center gap-1'>
+                    <p className=' text-[16px] flex items-center gap-1 font-raleway'>
                     <IoMailOutline  className='w-6 h-6 text-black'/>
                         example@example.com
                     </p>
@@ -60,7 +60,7 @@ const Footer = () => {
                             </div>
             </div>
             <div className="right text-end">
-                <ul className='list-none text-[18px] flex flex-col gap-[19px]'>
+                <ul className='list-none text-[18px] font-raleway flex flex-col gap-[19px]'>
                     <li>
                         <a href="#">Home</a>
                         </li>
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
 
         </Container>
-        <p className='flex  items-center gap-1 justify-center py-5 '>Copyright 2024 <BsCCircle className='w-4 h-4' /> SumDimSum</p>
+        <p className='flex  items-center gap-1 justify-center py-5 font-raleway '>Copyright 2024 <BsCCircle className='w-4 h-4' /> SumDimSum</p>
     </footer>
   )
 }
