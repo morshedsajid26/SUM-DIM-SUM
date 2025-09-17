@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+
 import Container from './Container'
 import tree from '/public/ContactLeft.png'
 import Image from 'next/image';
@@ -6,6 +8,35 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaLinkedinIn, FaTwitter, FaXTwitt
 import { HiMiniArrowLongRight } from 'react-icons/hi2';
 
 const Contact = () => {
+
+    const [formData, setFormData] = useState({ name: "", email: "",phone:"", message: "" });
+  const [message, setMessage] = useState("");
+
+   const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("https://landingpage-backend-fovb.onrender.com/api/v1/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setMessage("Message sent successfully!");
+        setFormData({ name: "", email: "", phone:"", message: "" });
+      } else {
+        setMessage("Failed to send message.");
+      }
+    } catch (error) {
+      console.error(error);
+      setMessage("Something went wrong.");
+    }
+  };
   return (
     <div className='pt-[120px]'>
         <Container className='flex'>
@@ -13,18 +44,18 @@ const Contact = () => {
             <h3 className='font-raleway text-[24px] font-semibold text-[#F8F8FF]'>Just Say Hi !</h3>
             <p className='font-raleway text-[16px] text-[#F8F8FF] mt-2'>Tell us more about you and we’ll contact you soon.</p>
 
-            <form className='w-[706px] mt-[60px] flex flex-col items-end'>
-                <input className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Name' />
+            <form onSubmit={handleSubmit} className='w-[706px] mt-[60px] flex flex-col items-end'>
+                <input name="name" value={formData.name} onChange={handleChange} className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Name' />
 
                <div className='flex gap-6 mt-10'>
-                 <input className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Email' />
+                 <input name="email" value={formData.email} onChange={handleChange} className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Email' />
 
-                <input className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Phone Number' />
+                <input name="phone" value={formData.phone} onChange={handleChange} className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Phone Number' />
                </div>
 
-                <textarea className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] resize-none mt-[120px]' placeholder='Your Message'></textarea>
+                <textarea name="message" value={formData.message} onChange={handleChange} className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] resize-none mt-[120px]' placeholder='Your Message'></textarea>
 
-                <button className='bg-[#B31217] text-white text-[18px] font-semibold py-[11.5px] px-[49.5px] rounded-[10px] mt-[60px] flex items-center font-raleway cursor-pointer '>Submit
+                <button type='submit' className='bg-[#B31217] text-white text-[18px] font-semibold py-[11.5px] px-[49.5px] rounded-[10px] mt-[60px] flex items-center font-raleway cursor-pointer '>Submit
                     <HiMiniArrowLongRight className='w-6 h-6 ml-2' />
                 </button>
             </form>
