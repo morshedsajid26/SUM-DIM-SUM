@@ -29,21 +29,21 @@ const times=[
     
 ];
   return (
-    <div className='pt-[120px] '>
-        <Container className='flex  justify-between'>
-        <div className="right w-[558px] relative">
-            <div className='relativ border border-[#B31217] rounded-[20px] w-[468px] h-[514px] '></div>
-            <Image className='absolute top-[26px] left-6 ' src={reservation} alt='reservation'/>
+    <div className='md:pt-[120px] pt-[80px] '>
+        <Container className='md:flex  justify-between'>
+        <div className="right w md:w-[558px] relative">
+            <div className='relativ border border-[#B31217] rounded-[20px] md:w-[468px] w-[400px] md:h-[514px] h-[250px] '></div>
+            <Image className='absolute top-[10px] md:top-[26px] left-2 md:left-6 ' src={reservation} alt='reservation'/>
         </div>
-        <div className="left w-[700px]">
-            <h3 className='font-cinzel text-[32px] font-bold text-[#0C0C0C]'>Reserve Your Table for an Authentic
+        <div className="left md:w-[700px] mt-[240px] md:mt-0">
+            <h3 className='font-cinzel text-[24px] md:text-[32px] font-bold text-[#0C0C0C] text-center md:text-start'>Reserve Your Table for an Authentic
 Sum Dim Sum Experience</h3>
 
-            <p className='font-raleway text-[16px] text-[#0C0C0C] mt-5'>Don’t miss the chance to savor the finest flavors of authentic dim sum in a warm and inviting atmosphere. Whether it’s a special occasion, a family gathering, or a cozy dinner for two, our handcrafted dishes and impeccable service make every moment memorable. Reserve your table now and let us take you on a culinary journey filled with tradition, passion, and the joy of exceptional food. Your unforgettable dining experience awaits!</p>
+            <p className='font-raleway text-[12px] md:text-[16px] text-[#0C0C0C] mt-5 text-center md:text-start'>Don’t miss the chance to savor the finest flavors of authentic dim sum in a warm and inviting atmosphere. Whether it’s a special occasion, a family gathering, or a cozy dinner for two, our handcrafted dishes and impeccable service make every moment memorable. Reserve your table now and let us take you on a culinary journey filled with tradition, passion, and the joy of exceptional food. Your unforgettable dining experience awaits!</p>
 
             <form className=''>
                 <div className='grid grid-cols-2 grid-rows-2 mt-[60px] gap-x-6 gap-y-20'>
-                <input className='outline-none border-b w-[338px] font-poppins text-[16px] text-[#0C0C0C] placeholder-[#0C0C0C] border-[#0C0C0C] pb-3' type="text " placeholder='Your Name' />
+                <input className='outline-none border-b md:w-[338px] font-poppins text-[16px] text-[#0C0C0C] placeholder-[#0C0C0C] border-[#0C0C0C] pb-3' type="text " placeholder='Your Name' />
                
                <div className='relative'>
                 <div onClick={()=>setPerson(!person)} className='flex items-center justify-between cursor-pointer'>

@@ -38,24 +38,24 @@ const Contact = () => {
     }
   };
   return (
-    <div className='pt-[120px]'>
-        <Container className='flex'>
-            <div className="form w-[826px] bg-[url(/ContactBG.png)] bg-cover bg-center bg-no-repeat py-[120px] px-[60px] rounded-l-[20px]">
-            <h3 className='font-raleway text-[24px] font-semibold text-[#F8F8FF]'>Just Say Hi !</h3>
-            <p className='font-raleway text-[16px] text-[#F8F8FF] mt-2'>Tell us more about you and we’ll contact you soon.</p>
+    <div className='md:pt-[120px] pt-[80px]'>
+        <Container className='md:flex '>
+            <div className="form md:w-[826px] bg-[url(/ContactBG.png)] bg-cover bg-center bg-no-repeat py-[120px] px-[60px] rounded-t-[20px] md:rounded-l-[20px]">
+            <h3 className='font-raleway text-[18px] md:text-[24px] font-semibold text-[#F8F8FF]'>Just Say Hi !</h3>
+            <p className='font-raleway text-[12px] md:text-[16px] text-[#F8F8FF] mt-2'>Tell us more about you and we’ll contact you soon.</p>
 
-            <form onSubmit={handleSubmit} className='w-[706px] mt-[60px] flex flex-col items-end'>
+            <form onSubmit={handleSubmit} className='md:w-[706px] mt-[60px] flex flex-col items-end'>
                 <input name="name" value={formData.name} onChange={handleChange} className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Name' />
 
-               <div className='flex gap-6 mt-10'>
-                 <input name="email" value={formData.email} onChange={handleChange} className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Email' />
+               <div className='md:flex gap-6 mt-10'>
+                 <input name="email" value={formData.email} onChange={handleChange} className='w-full md:w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Email' />
 
-                <input name="phone" value={formData.phone} onChange={handleChange} className='w-[341px] text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3' type="text" placeholder='Phone Number' />
+                <input name="phone" value={formData.phone} onChange={handleChange} className='w-full md:w-[341px] text-[#f8f8ff] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] pb-3 mt-10 md:mt-0' type="text" placeholder='Phone Number' />
                </div>
 
                 <textarea name="message" value={formData.message} onChange={handleChange} className='w-full text-[#F8F8FF] placeholder-[#F8F8FF]  outline-none border-b border-[#E6F6FC] resize-none mt-[120px]' placeholder='Your Message'></textarea>
 
-                <button type='submit' className='bg-[#B31217] text-white text-[18px] font-semibold py-[11.5px] px-[49.5px] rounded-[10px] mt-[60px] flex items-center font-raleway cursor-pointer '>Submit
+                <button type='submit' className='bg-[#B31217] text-white text-[16px] md:text-[18px] font-semibold py-[11.5px] px-[49.5px] rounded-[10px] mt-[60px] flex items-center font-raleway cursor-pointer '>Submit
                     <HiMiniArrowLongRight className='w-6 h-6 ml-2' />
                 </button>
             </form>
@@ -63,11 +63,11 @@ const Contact = () => {
 
             </div>
 
-            <div className="info w-[494px] bg-[#F7E7E8] rounded-r-[20px] text-[#0C0C0C] ">
+            <div className="info md:w-[494px] bg-[#F7E7E8] rounded-b-[20px] md:rounded-r-[20px] text-[#0C0C0C] ">
                 <div className="tree pt-[163px] pb-[42px] relative">
                     <Image src={tree} alt='tree'/>
 
-                    <div className="text absolute top-1/2  left-0 w-full -translate-y-1/2 pl-[60px]">
+                    <div className="text absolute top-1/2  left-0 w-full -translate-y-1/2 md:pl-[60px] text-center md:text-start">
                     
                     <h3 className='text-[24px] font-poppins font-semibold mb-5'>Contact Information</h3>
                     <p className='font-open-sans text-[16px]'>Maui, Hawaii, USA</p>
@@ -76,7 +76,7 @@ const Contact = () => {
 
                     <div>
                         <h3 className='font-poppins text-[24px] font-semibold mt-[60px]'>Follow Us</h3>
-                        <div className="icon flex items-center gap-5 mt-5">
+                        <div className="icon flex items-center justify-center md:justify-start gap-5 mt-5">
                             <FaFacebookF className='w-[9.29px] h-5'/>
                             <FaLinkedinIn className='w-[21.13px] h-5'/>
                             <FaXTwitter className='w-[19.56px] h-5'/>
@@ -84,7 +84,7 @@ const Contact = () => {
 
 
                     </div>
-                     <h3 className='font-passions-conflict text-[64px] text-[#646464] pt-[40px] pl-[181px]'>Contact Us</h3>
+                     <h3 className='font-passions-conflict text-[64px] text-[#646464] pt-[40px] md:pl-[181px]'>Contact Us</h3>
 
                 </div>
                

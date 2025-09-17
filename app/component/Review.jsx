@@ -102,7 +102,7 @@ const Review = () => {
     }
   };
   return (
-    <div className='py-[120px] '>
+    <div className='md:pt-[120px] pt-[80px] '>
         <Container>
             <div className='text-center flex flex-col items-center gap-5'>
                             <h1 className='uppercase text-[24px] md:text-[48px] font-cinzel font-semibold  '>The Talk of the Town</h1>
