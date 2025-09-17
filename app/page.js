@@ -9,6 +9,7 @@ import Contact from './component/Contact';
 import Reservation from './component/Reservation';
 import TraditionPart from './component/TraditionPart';
 import Review from './component/Review';
+import StoryPart from './component/StoryPart';
 
 const page = () => {
   return (
@@ -36,6 +37,7 @@ const page = () => {
      </div>
 
     </div>
+    <StoryPart/>
     <TraditionPart/>
     <DivePart/>
     <Review/>
