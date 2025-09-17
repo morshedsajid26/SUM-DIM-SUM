@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
 
              <div
-              className={`md:w-[756px] md:flex gap-10 absolute md:static top-17 right-0 h-screen md:h-auto w-[50%] bg-[#000000]/80 md:bg-transparent z-20 flex-col md:flex-row items-center justify-center transition-transform duration-300 md:px-0 px-20 py-[170px] md:py-0 text-center ${isMenuOpen ? 'translate-x-0 overflow-hidden' : 'translate-x-full md:translate-x-0 '}`}
+              className={`md:w-[756px] w-full flex md:gap-10 gap-5 absolute md:static top-0 right-0   bg-[#000000]/80 md:bg-transparent z-20 flex-col md:flex-row items-center justify-center transition-all duration-300 md:px-0 px-20 py-[70px] md:py-0 text-center ${isMenuOpen ? "translate-y-0":"-translate-y-[200%] md:-translate-y-0"}`}
               >
                 <Li liText='Home'/>
                 <Li liText='About'/>
