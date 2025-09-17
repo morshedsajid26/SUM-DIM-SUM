@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
              <div
          className={`md:w-[756px] md:flex gap-10 
-  absolute md:static top-21 right-0 
+  absolute md:static top-17 right-0 
   h-screen md:h-auto w-[50%] 
   bg-[#000000]/80 md:bg-transparent 
   z-20 flex-col md:flex-row items-center justify-center 
