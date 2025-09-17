@@ -6,6 +6,7 @@ import frame from '/public/frame.png'
 import Image from 'next/image';
 import DivePart from './component/DivePart';
 import Contact from './component/Contact';
+import Reservation from './component/Reservation';
 
 const page = () => {
   return (
@@ -34,6 +35,7 @@ const page = () => {
 
     </div>
     <DivePart/>
+    <Reservation/>
     <Contact/>
     </div>
   )
