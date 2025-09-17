@@ -36,10 +36,11 @@ const times=[
             <Image className='absolute top-[10px] md:top-[26px] left-2 md:left-6 ' src={reservation} alt='reservation'/>
         </div>
         <div className="left md:w-[700px] mt-[240px] md:mt-0">
-            <h3 className='font-cinzel text-[24px] md:text-[32px] font-bold text-[#0C0C0C] text-center md:text-start'>Reserve Your Table for an Authentic
-Sum Dim Sum Experience</h3>
+            <h3 className='font-cinzel text-[24px] md:text-[32px] font-bold text-[#0C0C0C] text-center md:text-start'>Reserve Your Table for an Authentic Sum Dim Sum Experience
+            </h3>
 
-            <p className='font-raleway text-[12px] md:text-[16px] text-[#0C0C0C] mt-5 text-center md:text-start'>Don’t miss the chance to savor the finest flavors of authentic dim sum in a warm and inviting atmosphere. Whether it’s a special occasion, a family gathering, or a cozy dinner for two, our handcrafted dishes and impeccable service make every moment memorable. Reserve your table now and let us take you on a culinary journey filled with tradition, passion, and the joy of exceptional food. Your unforgettable dining experience awaits!</p>
+            <p className='font-raleway text-[12px] md:text-[16px] text-[#0C0C0C] mt-5 text-center md:text-start'>Don’t miss the chance to savor the finest flavors of authentic dim sum in a warm and inviting atmosphere. Whether it’s a special occasion, a family gathering, or a cozy dinner for two, our handcrafted dishes and impeccable service make every moment memorable. Reserve your table now and let us take you on a culinary journey filled with tradition, passion, and the joy of exceptional food. Your unforgettable dining experience awaits!
+            </p>
 
             <form className=''>
                 <div className='grid grid-cols-2 grid-rows-2 mt-[60px] gap-x-6 gap-y-20'>

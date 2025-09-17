@@ -111,10 +111,11 @@ const Review = () => {
         </Container>
 
         <div className='bg-[url(/ReviewBG.png)] bg-cover bg-center bg-no-repeat mt-[60px] '>
-<Container className=' py-[60px]'>
+    
+    <Container className=' py-[60px]'>
     <Image src={icon} alt='icon'/>
 
-<Slider {...settings}>
+    <Slider {...settings}>
         <SliderCard/>
         <SliderCard/>
         <SliderCard/>
@@ -124,7 +125,7 @@ const Review = () => {
       </Slider>
 
 
-</Container>
+    </Container>
         </div>
         
     </div>
