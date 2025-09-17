@@ -4,10 +4,10 @@ import Container from './Container'
 
 const DivePart = () => {
   return (
-    <div className='bg-[url(/Divepart.png)] py-[60px] bg-cover bg-center bg-no-repeat  ' id='merchandise'>
+    <div className='bg-[url(/DivePart.png)] py-[60px] bg-cover bg-center bg-no-repeat  ' id='merchandise'>
         <Container>
-          <div className='md:w-[994px] flex flex-col items-center justify-center text-center mx-auto '>
-                    <h1 className='text-white text-[32px] md:text-[64px] font-bold text-center font-cinzel'>Dive Into the World of Sumptuous
+          <div className='md:w-[1120px] flex flex-col items-center justify-center text-center mx-auto '>
+                    <h1 className='text-white text-[32px] md:text-[64px] font-bold  font-cinzel'>Dive Into the World of Sumptuous
                     Sum Dim Sum</h1>
                   
                   <p className='text-white text-[12px] md:text-[16px] mt-5 md:w-[850px] text-center font-raleway'>Embark on a culinary journey where every bite tells a story of tradition and passion. At Sum Dim Sum, we bring you an authentic Asian dining experience with handcrafted dishes, vibrant flavors, and the warmth of our culture. From delicate dumplings to savory
