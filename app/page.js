@@ -7,6 +7,8 @@ import Image from 'next/image';
 import DivePart from './component/DivePart';
 import Contact from './component/Contact';
 import Reservation from './component/Reservation';
+import TraditionPart from './component/TraditionPart';
+import Review from './component/Review';
 
 const page = () => {
   return (
@@ -34,7 +36,9 @@ const page = () => {
      </div>
 
     </div>
+    <TraditionPart/>
     <DivePart/>
+    <Review/>
     <Reservation/>
     <Contact/>
     </div>

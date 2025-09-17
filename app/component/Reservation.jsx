@@ -27,7 +27,7 @@ const times=[
     "10:00 AM",
     "11:00 AM",
     
-]
+];
   return (
     <div className='pt-[120px] '>
         <Container className='flex  justify-between'>
