@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Container from './Container'
 import Image from 'next/image'
 import Tradition1 from '/public/Tradition1.png'
@@ -7,16 +8,11 @@ import Tradition3 from '/public/Tradition3.png'
 import Tradition4 from '/public/Tradition4.png'
 import headerImage from '/public/headerImage.png'
 import { HiMiniArrowLongRight } from 'react-icons/hi2'
+import Slider from 'react-slick'
 
-const TraditionPart = () => {
-  return (
-    <div className='py-[120px] '>
-        <Container >
-            <div className='text-center flex flex-col items-center gap-5'>
-                <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>taste the tradition</h1>
-                <Image src={headerImage}/>
-            </div>
-           <div className='mt-[60px]'>
+let SliderPart = ()=>{
+    return(
+        <div className='pb-[60px]'>
             <div className="flex gap-6">
                  <div className="w-[848px] relative rounded-[15px] overflow-hidden">
                 <Image className='' src={Tradition1}/>
@@ -45,6 +41,68 @@ const TraditionPart = () => {
                  <Image src={Tradition4}/>
             </div>
             </div>
+        </div>
+    )}
+
+const TraditionPart = () => {
+    let [active, setActive] = useState(0);
+    var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+
+    appendDots: dots => (
+      <div
+        style={{
+          backgroundColor: "transparent",
+          
+          padding: "10px",
+          marginTop: "60px",
+          display: "flex", justifyContent: "center",
+          itemsAlign: "center",
+          
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: i => (
+      <div className={`border border-[#B31217] p-2 text-[0px] mt-[60px] ${active === i ? 'bg-[#B31217] ' : 'bg-transparent' } `}
+        style={{
+          width: "10px",
+          height: "10px",
+          rotate: "45deg"
+          
+          
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
+     beforeChange: (item, i) => {
+        setActive(i);
+    }
+  };
+  return (
+    <div className='py-[120px] '>
+        <Container >
+            <div className='text-center flex flex-col items-center gap-5'>
+                <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>taste the tradition</h1>
+                <Image src={headerImage}/>
+            </div>
+           <div className='mt-[60px]'>
+            <Slider {...settings}>
+                <SliderPart/>
+                <SliderPart/>
+                <SliderPart/>
+                <SliderPart/>
+                <SliderPart/>
+
+
+            </Slider>
            </div>
         </Container>
     </div>
