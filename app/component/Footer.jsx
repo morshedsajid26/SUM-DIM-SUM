@@ -9,8 +9,8 @@ import { BsCCircle } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className='pt-[120px]'>
-        <Container className='border-y border-[#B31217] grid grid-cols-3 justify-between py-[60px]'>
-            <div className="left gap-5 flex flex-col">
+        <Container className='border-y border-[#B31217] grid md:grid-cols-3 justify-center md:justify-between py-[60px]'>
+            <div className="left gap-5 text-center items-center flex flex-col">
               
                     <h3 className=' uppercase text-[24px] font-bold font-cinzel '>Contact</h3>
                     <p className=' text-[16px] flex items-center gap-1 font-raleway'>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </p>
              
             </div>
-            <div className="middle flex flex-col items-center text-center gap-10">
+            <div className="middle flex flex-col items-center text-center gap-10 md:my-0 my-[60px]">
                 <Image src={logo} alt="logo" />
                 <div className="icon list-none flex justify-center items-center gap-5">
                                <li> 
@@ -59,7 +59,7 @@ const Footer = () => {
                 
                             </div>
             </div>
-            <div className="right text-end">
+            <div className="right text-center items-center md:text-end">
                 <ul className='list-none text-[18px] font-raleway flex flex-col gap-[19px]'>
                     <li>
                         <a href="#">Home</a>

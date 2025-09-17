@@ -6,7 +6,7 @@ import {  MdCall,MdEmail} from "react-icons/md";
 const Header = () => {
   return (
     <div className='bg-black'>
-        <Container className={'flex items-center justify-between py-2.5'}>
+        <Container className={'md:flex items-center justify-between py-2.5'}>
             <div className="left flex items-center gap-10">
                
                     <p className='text-white text-[12px] flex items-center gap-2 font-raleway'>
@@ -29,7 +29,7 @@ const Header = () => {
                     
             </div>
 
-            <div className="right w-[130px] list-none flex items-center gap-5">
+            <div className="right md:w-[130px] list-none flex items-center gap-5 mt-2 md:mt-0">
                <li> 
                 <a href="#">
                     <FaFacebookF className='w-[9.2px] h-[20px] text-white' />
