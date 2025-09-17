@@ -13,6 +13,8 @@
   --font-raleway: var(--font-raleway);
   --font-cinzel: var(--font-cinzel);
   --font-poppins: var(--font-poppins);
+  --font-open-sans: var(--font-open-sans);
+  --font-passions-conflict: var(--font-passions-conflict);
 }
 
 @media (prefers-color-scheme: white) {

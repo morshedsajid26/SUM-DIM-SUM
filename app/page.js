@@ -5,6 +5,7 @@ import { HiMiniArrowLongRight } from "react-icons/hi2";
 import frame from '/public/frame.png'
 import Image from 'next/image';
 import DivePart from './component/DivePart';
+import Contact from './component/Contact';
 
 const page = () => {
   return (
@@ -33,6 +34,7 @@ const page = () => {
 
     </div>
     <DivePart/>
+    <Contact/>
     </div>
   )
 }
