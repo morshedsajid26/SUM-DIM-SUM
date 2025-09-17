@@ -16,7 +16,7 @@ let SliderPart = ()=>{
             <div className="flex gap-6">
                  <div className="w-[848px] relative rounded-[15px] overflow-hidden">
                 <Image className='' src={Tradition1} alt='image'/>
-                <div className=' absolute bottom-0 rounded-b-[15px]  w-full p-5 bg-black/40 backdrop-blur-xl flex items-center justify-between '> 
+                <div className=' absolute bottom-0 rounded-b-[15px]  w-full p-5 bg-black/40 backdrop-blur-xl md:flex items-center justify-between hidden '> 
                 <div className='w-[438px]'>
                     <h3 className='font-raleway text-[18px] font-semibold text-[#F8F8FF] mt-3'>Wolfberry with Mushroom Siew Mai 枸杞子烧卖</h3>
                 <p className='font-raleway text-[16px] text-[#F8F8FF] mt-3'>A traditional dim sum favorite featuring steamed dumplings
@@ -90,7 +90,7 @@ const TraditionPart = () => {
     <div className='py-[120px] '>
         <Container >
             <div className='text-center flex flex-col items-center gap-5'>
-                <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>taste the tradition</h1>
+                <h1 className='uppercase text-[24px] md:text-[48px] font-cinzel font-semibold  '>taste the tradition</h1>
                 <Image src={headerImage} alt='image'/>
             </div>
            <div className='mt-[60px]'>

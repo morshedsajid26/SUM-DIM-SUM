@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
    
-    <nav className='py-[25px]'>
+    <nav className='py-[25px] '>
         <Container className={'flex items-center  justify-between'}>
             <div className="logo w-[148px]">
                 <Image className='md:w-full w-[120px]' src={logo} alt="logo"/>
@@ -27,8 +27,9 @@ const Navbar = () => {
   h-screen md:h-auto w-[50%] 
   bg-[#000000]/80 md:bg-transparent 
   z-20 flex-col md:flex-row items-center justify-center 
-  transition-transform duration-300 px-20 py-[170px] md:py-0 text-center 
-  ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
+  transition-transform duration-300 md:px-0 px-20 py-[170px] md:py-0 text-center
+  
+  ${isMenuOpen ? 'translate-x-0 overflow-hidden' : 'translate-x-full md:translate-x-0 '}
 `}
         >
                 <Li liText='Home'/>

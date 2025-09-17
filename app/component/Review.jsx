@@ -11,19 +11,19 @@ import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 
 const SliderCard =() =>{
     return(
-        <div className=' relative w-[994px] text-center flex flex-col items-center gap-5 mx-auto pb-[62px]'> 
+        <div className=' relative md:w-[994px] text-center flex flex-col items-center gap-5 mx-auto pb-[62px]'> 
     <Image src={clientImage} alt='clientImage'/>
-<p className='font-raleway text-[16px] text-[#E6F6FC]'>Sum Dim Sum is more than just a restaurant—it’s an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you’re greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.</p>
-<div className="icon flex items-center gap-2.5">
-    <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
-    <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
-    <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
-    <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
-    <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
+<p className='font-raleway text-[12px] md:text-[16px] text-[#E6F6FC]'>Sum Dim Sum is more than just a restaurant—it’s an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you’re greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.</p>
+<div className="icon flex items-center gap-1 md:gap-2.5">
+    <FaStar className='w-5 md:w-[35px] h-5 md:h-[35px] text-[#FFD500]'/>
+    <FaStar className='w-5 md:w-[35px] h-5 md:h-[35px] text-[#FFD500]'/>
+    <FaStar className='w-5 md:w-[35px] h-5 md:h-[35px] text-[#FFD500]'/>
+    <FaStar className='w-5 md:w-[35px] h-5 md:h-[35px] text-[#FFD500]'/>
+    <FaStar className='w-5 md:w-[35px] h-5 md:h-[35px] text-[#FFD500]'/>
 </div>
-<div className='flex items-center gap-4 absolute bottom-0 -right-30'>
-    <span className='w-[60px] h-[1px] bg-[#F8F8FF]/40 '></span>
-    <h3 className=' text-[#F8F8FF]/40 font-passions-conflict text-[80px]'> Rosario Rosa</h3>
+<div className='flex items-center gap-4 absolute bottom-0 md:-right-30 '>
+    <span className='md:w-[60px] w-10 h-[1px] bg-[#F8F8FF]/40 '></span>
+    <h3 className=' text-[#F8F8FF]/40  font-passions-conflict text-[40px]  md:text-[80px]'> Rosario Rosa</h3>
 </div>
 </div>
     )       
@@ -38,7 +38,7 @@ function SampleNextArrow(props) {
       onClick={onClick}
     >
       <div className=''>
-        <MdArrowForwardIos className='w-[60px] h-[60px] text-[#F8F8FF]/40' />
+        <MdArrowForwardIos className='w-[60px] h-[60px] text-[#F8F8FF]/40 hidden md:block' />
       </div>
     </div>
   );
@@ -48,7 +48,7 @@ function SamplePrevArrow(props) {
   const {  style, onClick } = props;
   return (
     <div
-     className='absolute left-0 top-1/2 -translate-y-1/2  '
+     className='absolute left-0 top-1/2 -translate-y-1/2   '
       style={{ ...style, display: "flex",background: "" }}
       onClick={onClick}
     >
@@ -105,7 +105,7 @@ const Review = () => {
     <div className='py-[120px] '>
         <Container>
             <div className='text-center flex flex-col items-center gap-5'>
-                            <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>The Talk of the Town</h1>
+                            <h1 className='uppercase text-[24px] md:text-[48px] font-cinzel font-semibold  '>The Talk of the Town</h1>
                             <Image src={headerImage} alt='image'/>
                         </div>
         </Container>

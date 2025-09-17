@@ -13,7 +13,7 @@ import StoryPart from './component/StoryPart';
 
 const page = () => {
   return (
-    <div>
+    <div className=''>
       <div className='bg-[url(/Banner.png)] md:h-full min-h-screen bg-cover bg-center bg-no-repeat ' id=''>
      <Navbar/>
 
