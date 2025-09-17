@@ -23,7 +23,7 @@ const StoryPart = () => {
                         <HiMiniArrowLongRight className='w-5 h-5 ml-2' />
                     </button>
 
-                    <Image className='absolute top-[82px] left-1/2 -translate-x-1/2' src={storybg}/>
+                    <Image className='absolute top-[82px] left-1/2 -translate-x-1/2' src={storybg} alt='image'/>
                 </div>
                 <div className='absolute top-[60px] -right-6 '>
                     <div className="relative w-[448px] h-[365px] border border-[#B31217] rounded-[20px] ">
@@ -31,32 +31,32 @@ const StoryPart = () => {
                     </div>
                    
                 </div>
-                 <Image className='absolute top-[84px] right-0' src={story2}/>
+                 <Image className='absolute top-[84px] right-0' src={story2} alt='image'/>
             </div>
 
             <div className='down w-[1096px] mx-auto grid grid-cols-4 gap-[196px] mt-[60px]'>
                 <div className='flex flex-col items-center justify-center'>
-                    <Image src={layer1}/>
+                    <Image src={layer1} alt='image'/>
                     <p className='font-cinzel font-bold text-[36px] text-[#0C0C0C]'> 6,000+</p>
                     <p className='font-raleway font-medium text-[18px] text-[#0C0C0C]'>Happy Guests</p>
 
                 </div>
                 <div className='flex flex-col items-center justify-center'>
-                    <Image src={layer2}/>
+                    <Image src={layer2} alt='image'/>
                     <p className='font-cinzel font-bold text-[36px] text-[#0C0C0C]'> 50+</p>
                     <p className='font-raleway font-medium text-[18px] text-[#0C0C0C]'>Unique Dishes </p>
 
                 </div>
 
                 <div className='flex flex-col items-center justify-cent'>
-                    <Image src={layer3}/>
+                    <Image src={layer3} alt='image'/>
                     <p className='font-cinzel font-bold text-[36px] text-[#0C0C0C]'> 20+</p>
                     <p className='font-raleway font-medium text-[18px] text-[#0C0C0C]'>Years Of Qualit</p>
 
                 </div>
 
                 <div className='flex flex-col items-center justify-center'>
-                    <Image src={layer4}/>
+                    <Image src={layer4} alt='image'/>
                     <p className='font-cinzel font-bold text-[36px] text-[#0C0C0C]'> 12+</p>
                     <p className='font-raleway font-medium text-[18px] text-[#0C0C0C]'>Monthly Event</p>
 

@@ -1,14 +1,16 @@
-'use client'
-import React from 'react'
+'use client';
+import React, { useState } from 'react'
 import Container from './Container'
 import Image from 'next/image'
 import logo from '/public/NavLogo.png'
 
 import Li from './Li'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 
 
 const Navbar = () => {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
 
 
@@ -19,7 +21,16 @@ const Navbar = () => {
             <div className="logo w-[148px]">
                 <Image className='md:w-full w-[120px]' src={logo} alt="logo"/>
             </div>
-            <div className="menu  w-[756px] md:flex hidden gap-10 ">
+             <div
+         className={`md:w-[756px] md:flex gap-10 
+  absolute md:static top-21 right-0 
+  h-screen md:h-auto w-[50%] 
+  bg-[#000000]/80 md:bg-transparent 
+  z-20 flex-col md:flex-row items-center justify-center 
+  transition-transform duration-300 px-20 py-[170px] md:py-0 text-center 
+  ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
+`}
+        >
                 <Li liText='Home'/>
                 <Li liText='About'/>
                 <Li liText='Menu & Locations'/>
@@ -28,9 +39,23 @@ const Navbar = () => {
                 <Li liText='Career'/>
                 <Li liText='Contact'/>
             </div>
-            <div className="button md:flex hidden">
-              <button className='text-white text-[16px] font-semibold py-2.5 px-5 bg-white/12 rounded-[10px] font-raleway'>Book a Table</button>
+            <div className="button ">
+              <button className='text-white text-[16px] font-semibold py-2.5 px-5 bg-white/12 rounded-[10px] font-raleway md:flex hidden'>Book a Table</button>
+
+               
             </div>
+            <div className="md:hidden mt-[4px] mr-4 z-30 ">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className='cursor-pointer'
+          >
+            {isMenuOpen ? (
+              <FaTimes size={24} color="#FAFAFA" />
+            ) : (
+              <FaBars size={24} color="#FAFAFA" />
+            )}
+          </button>
+        </div>
 
             
         </Container>

@@ -15,7 +15,7 @@ let SliderPart = ()=>{
         <div className='pb-[60px]'>
             <div className="flex gap-6">
                  <div className="w-[848px] relative rounded-[15px] overflow-hidden">
-                <Image className='' src={Tradition1}/>
+                <Image className='' src={Tradition1} alt='image'/>
                 <div className=' absolute bottom-0 rounded-b-[15px]  w-full p-5 bg-black/40 backdrop-blur-xl flex items-center justify-between '> 
                 <div className='w-[438px]'>
                     <h3 className='font-raleway text-[18px] font-semibold text-[#F8F8FF] mt-3'>Wolfberry with Mushroom Siew Mai 枸杞子烧卖</h3>
@@ -30,15 +30,15 @@ let SliderPart = ()=>{
                 </div>
             </div>
             <div className="w-[448px]">
-                 <Image src={Tradition2}/>
+                 <Image src={Tradition2} alt='image'/>
             </div>
             </div>
             <div className="flex gap-6 mt-6">
                 <div className="w-[448px] ">
-                 <Image src={Tradition3}/>
+                 <Image src={Tradition3} alt='image'/>
             </div>
             <div className="w-[848px] ">
-                 <Image src={Tradition4}/>
+                 <Image src={Tradition4} alt='image'/>
             </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ const TraditionPart = () => {
         <Container >
             <div className='text-center flex flex-col items-center gap-5'>
                 <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>taste the tradition</h1>
-                <Image src={headerImage}/>
+                <Image src={headerImage} alt='image'/>
             </div>
            <div className='mt-[60px]'>
             <Slider {...settings}>

@@ -12,7 +12,7 @@ import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 const SliderCard =() =>{
     return(
         <div className=' relative w-[994px] text-center flex flex-col items-center gap-5 mx-auto pb-[62px]'> 
-    <Image src={clientImage}/>
+    <Image src={clientImage} alt='clientImage'/>
 <p className='font-raleway text-[16px] text-[#E6F6FC]'>Sum Dim Sum is more than just a restaurant—it’s an experience that transports you to the heart of Asian culinary tradition. Each bite is a harmonious blend of flavor, texture, and passion, crafted meticulously to reflect the essence of dim sum culture. The moment you step in, you’re greeted by the comforting aroma of freshly steamed dumplings, the vibrant energy of a bustling kitchen, and the warm smiles of a team dedicated to delivering perfection on every plate.</p>
 <div className="icon flex items-center gap-2.5">
     <FaStar className='w-[35px] h-[35px] text-[#FFD500]'/>
@@ -106,13 +106,13 @@ const Review = () => {
         <Container>
             <div className='text-center flex flex-col items-center gap-5'>
                             <h1 className='uppercase text-[48px] font-cinzel font-semibold  '>The Talk of the Town</h1>
-                            <Image src={headerImage}/>
+                            <Image src={headerImage} alt='image'/>
                         </div>
         </Container>
 
         <div className='bg-[url(/ReviewBG.png)] bg-cover bg-center bg-no-repeat mt-[60px] '>
 <Container className=' py-[60px]'>
-    <Image src={icon}/>
+    <Image src={icon} alt='icon'/>
 
 <Slider {...settings}>
         <SliderCard/>
