@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div className='md:pt-[120px] pt-[80px]'>
         <Container className='md:flex '>
-            <div className="form md:w-[826px] bg-[url(/ContactBG.png)] bg-cover bg-center bg-no-repeat py-[120px] px-[60px] rounded-t-[20px] md:rounded-l-[20px]">
+            <div className="form md:w-[826px] bg-[url(/ContactBG.png)] bg-cover bg-center bg-no-repeat py-[120px] px-[60px] rounded-t-[20px] md:rounded-r-0 md:rounded-l-[20px]">
             <h3 className='font-raleway text-[18px] md:text-[24px] font-semibold text-[#F8F8FF]'>Just Say Hi !</h3>
             <p className='font-raleway text-[12px] md:text-[16px] text-[#F8F8FF] mt-2'>Tell us more about you and we’ll contact you soon.</p>
 
@@ -63,7 +63,7 @@ const Contact = () => {
 
             </div>
 
-            <div className="info md:w-[494px] bg-[#F7E7E8] rounded-b-[20px] md:rounded-r-[20px] text-[#0C0C0C] ">
+            <div className="info md:w-[494px] bg-[#F7E7E8] rounded-b-[20px] md:rounded-l-[0px] md:rounded-r-[20px] text-[#0C0C0C] ">
                 <div className="tree pt-[163px] pb-[42px] relative">
                     <Image src={tree} alt='tree'/>
 
