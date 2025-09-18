@@ -33,7 +33,7 @@ let SliderPart = ()=>{
                  <Image src={Tradition2} alt='image'/>
             </div>
             </div>
-            <div className="flex gap-6 mt-6">
+            <div className="flex gap-3 md:gap-6 mt-3 md:mt-6">
                 <div className="w-[448px] ">
                  <Image src={Tradition3} alt='image'/>
             </div>
