@@ -13,7 +13,7 @@ import Slider from 'react-slick'
 let SliderPart = ()=>{
     return(
         <div className='pb-[60px]'>
-            <div className="flex gap-6">
+            <div className="flex gap-3 md:gap-6">
                  <div className="w-[848px] relative rounded-[15px] overflow-hidden">
                 <Image className='' src={Tradition1} alt='image'/>
                 <div className=' absolute bottom-0 rounded-b-[15px]  w-full p-5 bg-black/40 backdrop-blur-xl md:flex items-center justify-between hidden '> 

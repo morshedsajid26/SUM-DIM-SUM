@@ -8,7 +8,7 @@ import { BsCCircle } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className='pt-[120px]'>
+    <footer className='pt-[120px] '>
         <Container className='border-y border-[#B31217] grid md:grid-cols-3 justify-center md:justify-between py-[60px]'>
             <div className="left gap-5 text-center items-center flex flex-col">
               
